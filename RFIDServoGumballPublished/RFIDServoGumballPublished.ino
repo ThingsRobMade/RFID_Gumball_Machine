@@ -187,8 +187,8 @@ void dad(){
     Serial.print("Candy dispensed at ");
     String currentTime = rtc.stringTime();
     Serial.println(currentTime);
-    gumballServo.write(110);              // tell servo to go to position in variable 'pos'
-      delay(3250);                       // waits 15ms for the servo to reach the position
+    gumballServo.write(110);              // Set the speed and direction of the servo
+      delay(3250);                       // set how long the servo turns. **THIS MAY NEED TO BE ADJUSTED FOR EACH MACHINE!**
       //}
       gumballServo.write(90);
       digitalWrite(greLight, LOW);
@@ -219,8 +219,8 @@ void mom(){
     Serial.print("Candy dispensed at ");
     String currentTime = rtc.stringTime();
     Serial.println(currentTime);
-    gumballServo.write(110);              // tell servo to go to position in variable 'pos'
-      delay(3250);                       // waits 15ms for the servo to reach the position
+    gumballServo.write(110);              // // Set the speed and direction of the servo
+      delay(3250);                       // set how long the servo turns. **THIS MAY NEED TO BE ADJUSTED FOR EACH MACHINE!**
       //}
       gumballServo.write(90);
       digitalWrite(greLight, LOW);
@@ -251,8 +251,8 @@ void daughter(){
     Serial.print("Candy dispensed at ");
     String currentTime = rtc.stringTime();
     Serial.println(currentTime);
-    gumballServo.write(110);              // tell servo to go to position in variable 'pos'
-      delay(3250);                       // waits 15ms for the servo to reach the position
+    gumballServo.write(110);              // // Set the speed and direction of the servo
+      delay(3250);                       // set how long the servo turns. **THIS MAY NEED TO BE ADJUSTED FOR EACH MACHINE!**
       //}
       gumballServo.write(90);
       digitalWrite(greLight, LOW);
@@ -283,8 +283,8 @@ void son(){
     Serial.print("Candy dispensed at ");
     String currentTime = rtc.stringTime();
     Serial.println(currentTime);
-    gumballServo.write(110);              // tell servo to go to position in variable 'pos'
-      delay(3250);                       // waits 15ms for the servo to reach the position
+    gumballServo.write(110);              // // Set the speed and direction of the servo
+      delay(3250);                       // set how long the servo turns. **THIS MAY NEED TO BE ADJUSTED FOR EACH MACHINE!**
       //}
       gumballServo.write(90);
       digitalWrite(greLight, LOW);
@@ -297,8 +297,8 @@ void emergency(){
   digitalWrite(redLight, HIGH);
   digitalWrite(greLight, HIGH);
   digitalWrite(bluLight, HIGH);
-  gumballServo.write(110);              // tell servo to go to position in variable 'pos'
-  delay(3250);                       // waits 15ms for the servo to reach the position
+  gumballServo.write(110);              // // Set the speed and direction of the servo
+      delay(3250);                       // set how long the servo turns. **THIS MAY NEED TO BE ADJUSTED FOR EACH MACHINE!**
   gumballServo.write(90);
   digitalWrite(redLight, LOW);
   digitalWrite(greLight, LOW);
